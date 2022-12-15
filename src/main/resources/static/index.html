@@ -1,0 +1,369 @@
+<!doctype html>
+<!--Código fuente de la página BGSPA desarrollado por JV-Lovers/Generation. Para mayor informes acerca de desarrollo enviar correo a: JVlovers.ch17@gmail.com-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./img/blanco_bg.png" type="image/x-icon">
+  <!--CSS de Bootstrap 4.6 y tipografía de Google Fonts-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!--CSS del proyecto-->
+  <!--<link rel="stylesheet" href="../css/logIn.css">    Por el momento este css choca con el disenio general de la pagina-->
+  <link rel="stylesheet" href="./css/headerFooter.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <!--<link rel="stylesheet" href="./css/busqueda.css">-->
+  <!--SWEET ALERTS-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  <title>BGSpa - Inicio</title>
+</head>
+
+<body>
+  
+  <!--Header | inicio-->
+  <header>
+    <!--Menú de navegación | inicio-->
+    <nav class="navbar navSuper">
+      <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">
+        <!-- <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a> -->
+        <a class="btn my-2 my-sm-0" type="submit" id="lupacont"><i id="lupa" class="bi bi-search binav"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" href="./pages/carrito.html"><i
+            class="bi bi-cart4 bi-movil binav"></i></a>
+        <a class="btn my-2 my-sm-0 acceder" type="submit" href="./pages/logIn.html"><i
+            class="bi bi-person bi-movil binav"></i></a>
+        <div class="cerrarSesion">
+          
+        </div>
+      </form>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:center;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./pages/catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="/pages/nosotrosbgspa.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./pages/distribuidor.html">Distribuidor</a>
+          </li>
+      </div>
+    </nav>
+      <div class="navBotones pruebaPosi1">
+      <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+      <a class="btn my-2 my-sm-0" type="submit" href="/pages/carrito.html"><i
+        class="bi bi-cart4 bi-movil binav"></i></a>
+      <a class="btn my-2 my-sm-0 acceder" type="submit" href="/pages/logIn.html"><i
+        class="bi bi-person bi-movil binav"></i></a>
+      <a class="cerrarSesion">
+  
+      </a>
+    </div>
+
+  </header>
+  
+
+  <!--Banner | inicio-->
+  <section>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/esteticos/banner.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </section>
+
+  <!--Página principal | inicio-->
+  <main class="container">
+    <!--Carrusel categorías | inicio-->
+    <div class="marginCon">
+      <h2>Categorías</h2>
+      <hr>
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="row cont" id="mediaQ1">
+              <!--Card categoría 1 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/basicos.png" class="card-img-top" alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">Básicos</a>
+                </div>
+              </div>
+              <!--Card categoría 2 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/bioJellySpa.png" class="card-img-top" alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">BioJelly Spa</a>
+                </div>
+              </div>
+              <!--Card categoría 3 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/bombasEfervescentes.png" class="card-img-top"
+                      alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">Bombas Efervescentes</a>
+                </div>
+              </div>
+              <!--Card categoría 4 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/exfoliantes.png" class="card-img-top" alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">Exfoliantes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row cont" id="mediaQ2">
+              <!--Card categoría 5 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/herramientas.png" class="card-img-top" alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">Herramientas</a>
+                </div>
+              </div>
+              <!--Card categoría 6 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/hidratacion.jpg" class="card-img-top" alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">Hidratación</a>
+                </div>
+              </div>
+              <!--Card categoría 7 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/mascarillas.png" class="card-img-top" alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">Mascarillas</a>
+                </div>
+              </div>
+              <!--Card categoría 8 | inicio-->
+              <div class="col espacio">
+                <div class="rd" style="width: auto;">
+                  <a href="#"><img src="./img/categoriasLideres/salesMinerales.png" class="card-img-top"
+                      alt="..." /></a>
+                </div>
+                <br>
+                <div class="card-body fondocard carta">
+                  <a href="#" class="ancla">Sales Minerales</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container flexCarrusel">
+        <a class="carousel-control-prev btnCarrusel" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="iconFlecha" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next btnCarrusel" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="iconFlecha" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!--Productos destacados | inicio-->
+    <section class="marginCon">
+      <h2>Productos destacados</h2>
+      <hr>
+      <br>
+      <div class="row cont" id="mediaQ3">
+        <!--Card destacado 1 | inicio-->
+        <div class="col espacio">
+          <div class="rd" style="width: auto;">
+            <a href="#"><img src="./img/Productos/aceitesParaMasaje/Aceite para masaje ALMENDRAS DULCES 1 Litro  .png"
+                class="card-img-top" alt="..." /></a>
+          </div>
+          <br>
+          <div class="card-body fondocard carta">
+            <p class="fontbold">Aceite ALMENDRAS 1L</p>
+            <p class="card-text">$347.00</p>
+            <br>
+            <div class="container btnAnadir">
+              <a href="/pages/catalogo.html" type="button" class="btnEnviar" id="btnValidar" style="text-decoration: none; color: white;">Ir a catálogo</a>
+            </div>
+          </div>
+        </div>
+        <!--Card destacado 2 | inicio-->
+        <div class="col espacio">
+          <div class="rd" style="width: auto;">
+            <a href="#"><img src="./img/Productos/Basicos/Ablandador de callosidades 1 litro.png"
+                class="card-img-top" alt="..." /></a>
+          </div>
+          <br>
+          <div class="card-body fondocard carta">
+            <p class="fontbold">Ablandador 1L</p>
+            <p class="card-text">$347.00</p>
+            <br>
+            <div class="container btnAnadir">
+              <a href="/pages/catalogo.html" type="button" class="btnEnviar" id="btnValidar" style="text-decoration: none; color: white;">Ir a catálogo</a>
+            </div>
+          </div>
+        </div>
+        <!--Card destacado 3 | inicio-->
+        <div class="col espacio">
+          <div class="rd" style="width: auto;">
+            <a href="#"><img src="./img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. COCONUT.png"
+                class="card-img-top" alt="..." /></a>
+          </div>
+          <br>
+          <div class="card-body fondocard carta">
+            <p class="fontbold">Bio Jelly Coco</p>
+            <p class="card-text">$147.00</p>
+            <br>
+            <div class="container btnAnadir">
+              <a href="/pages/catalogo.html" type="button" class="btnEnviar" id="btnValidar" style="text-decoration: none; color: white;">Ir a catálogo</a>
+            </div>
+          </div>
+        </div>
+        <!--Card destacado 4 | inicio-->
+        <div class="col espacio">
+          <div class="rd" style="width: auto;">
+            <a href="#"><img src="./img/Productos/hidratacion/CREMA_HIDRATANTE250ML_CHERRY.png"
+                class="card-img-top" alt="..." /></a>
+          </div>
+          <br>
+          <div class="card-body fondocard carta">
+            <p class="fontbold">Crema Cherry 250ml</p>
+            <p class="card-text">$147.00</p>
+            <br>
+            <div class="container btnAnadir">
+              <a href="/pages/catalogo.html" type="button" class="btnEnviar" id="btnValidar" style="text-decoration: none; color: white;">Ir a catálogo</a>
+            </div>
+          </div>
+        </div>
+        <!--Card destacado 4 | final-->
+      </div>
+    </section>
+  </main>
+
+
+<!--Footer | inicio-->
+<footer>
+  <div class="row">
+    <!--Card Contacto-->
+    <div class="card col-md-3 stlfot">
+      <div class="card-body">
+        <h5 class="card-title txtfot">Contacto</h5>
+        <p class="card-text txtfot"><i class="bi-telephone-fill"></i> 332 254 0774 / 331 892 7807</p>
+        <p class="card-text txtfot"><i class="bi-envelope-fill"></i> bgspa.contacto@gmail.com</p>
+        <p class="card-text txtfot"><i class="bi-geo-alt-fill"></i> Guadalajara, Jalisco, Mex.</p>
+      </div>
+    </div>
+    <!--Card Atención a clientes-->
+    <div class="card col-md-3 stlfot">
+      <div class="card-body">
+        <h5 class="card-title txtfot">Atención a clientes</h5>
+        <p class="card-text"><a href="/pages/politicas.html" class="card-text cardAtencion txtfot">Políticas de pago y envío</a></p>
+        <p class="card-text"><a href="#" class="card-text cardAtencion txtfot">Términos y condiciones</a></p>
+        <p class="card-text"><a href="/pages/privacidad.html" class="card-text cardAtencion txtfot">Aviso de privacidad</a></p>
+      </div>
+    </div>
+    <!--Card síguenos-->
+    <div class="card col-md-2 stlfot">
+      <div class="card-body">
+        <h5 class="card-title txtfot">Síguenos</h5>
+        <nav class="redes">
+          <a href="https://www.instagram.com/bgspaoficial/?igshid=YmMyMTA2M2Y%3D"
+            class="card-link bi bi-instagram"></a>
+          <a href="https://www.facebook.com/people/BG-SPA/100063504614562/" class="card-link bi bi-facebook"></a>
+          <a href="https://wa.me/3322540774" class="card-link bi bi-whatsapp"></a>
+        </nav>
+      </div>
+    </div>
+    <!--Card ofertas-->
+    <div class="card col-md-4 stlfot">
+      <div class="card-body botonSus">
+        <h5 class="card-title txtfot">¡Entérate de nuestras ofertas!</h5>
+        <label for="inputEmail" class="sr-only txtfot">Correo electrónico</label>
+        <input type="text" class="form-control txtfot" id="inputEmail" placeholder="Correo electrónico">
+        <button type="submit" id="btnSuscribirse" class="btnSuscribirse col-sm-12 txtfot">SUSCRIBIRSE</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--Div card_footer -->
+  <div class="card_footer">
+    <div class="card-body">
+      <img src="../img/logo_spa_morado.png" alt="">
+      <em>Derechos reservados &#169 BG SPA.</em> Desarrollado por <a href="/pages/nosotros.html"> <span
+          class="textjv">JVLovers</span></a>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- <script src="../js/registro.js"></script> -->
+  <!--Este link no funciona-->
+  <!-- <script src="../js/login.js"></script> -->
+  <!--------Correo-------->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!--Script del proyecto-->
+  <script src="./js/cerrarsesion.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/valfooter.js"></script>
+
+  <!--<script src="./js/busqueda.js"></script>
+  <script src="./js/prodLocalStorage.js"></script>-->
+
+  <!--Script para bootstrap 4.6-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

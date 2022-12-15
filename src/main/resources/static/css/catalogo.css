@@ -1,0 +1,159 @@
+/*Diseño elementos generales pág. catalogo*/
+body {
+    font-family: Raleway, sans-serif;
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+p.cardRe {
+    height: 5rem;
+}
+
+.marginCon {
+    padding-left: 1.2rem;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #A97798;
+    border-color: #A97798;
+
+}
+
+.custom-control-input:disabled~.custom-control-label::after {
+    border-color: #A97798;
+}
+
+a:hover {
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+#checkboxList{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.checkCol{
+    padding-left: 0px;
+}
+
+/* Diseño menú categorías versión movil*/
+@media screen and (max-width: 576px) {
+    .carousel {
+        display: none;
+    }
+
+    #listaCategorias {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: #F9F9F9;
+        border-radius: 10px;
+        border-radius: 10px;
+        padding: 20px;
+
+    }
+
+    .titulo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 15px;
+        font-size: 24px;
+        color: #000;
+    }
+
+    .card-body {
+        text-align: left;
+    }
+
+}
+/* Diseño menú categorías versión tablet*/
+@media screen and (min-width: 577px) {
+    #listaCategorias {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: #F9F9F9;
+        border-radius: 10px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    #listaProductos {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .titulo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 15px;
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    #listaCategorias {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: #F9F9F9;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    #listaProductos {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .titulo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        font-size: 28px;
+    }
+}
+
+/* Diseño menú categorías versión desktop*/
+@media screen and (min-width: 992px) {
+    #listaCategorias {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: #F9F9F9;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    #listaProductos {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .titulo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        font-size: 28px;
+    }
+}

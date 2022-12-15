@@ -1,0 +1,203 @@
+body, header, footer{
+    font-family: 'Raleway';
+}
+
+header{
+    background: linear-gradient(180deg, rgba(141, 106, 175, 0.81) 22.97%, rgba(73, 12, 134, 0) 100%);
+    background-color: #FFFFFF;
+}
+.textobg{
+    color: white;
+    font-size: 25px;
+}
+.btn {
+    color: white;
+}
+
+.nav-link{
+    font-size: 23px;
+    margin-right: 40px;
+    font-weight: 700;
+}
+.text-primary{
+    color: #512A5F!important;
+}
+
+a.text-primary:focus, a.text-primary:hover {
+    color: #837295 !important;
+}
+.binav{
+    font-size: 26px;
+    color: white !important;
+}
+
+.navBotones{
+    display: none;
+}
+
+/* ----FOOTER---------------------------------*/
+
+body{
+    position: relative;
+    padding-bottom: 20rem ;
+    min-height: 100vh;
+}/* Ajuste body para no alterar footer*/
+
+.card_footer{
+    background-color:  #EEBFFF!important;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+} /*Div card_footer*/
+
+footer{
+    background: linear-gradient(180deg, rgba(190, 162, 218, 0) 4.32%, #B69BD1 63.78%);
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}/* Color footer y posición*/
+
+.card{
+    background:none;
+    border: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+} /* Omite borde, color y padding de card´s */
+
+.card-body {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}/* Padding de car´d individuales*/
+
+.cardAtencion, .cardAtencion:hover {
+    color: #512A5F!important;
+}/* hover enlaces Atencion a clientes*/
+
+p {
+    margin-top: 0px;
+    margin-bottom: .3rem;
+} /* separacion entre lineas*/
+
+.row{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+}/* margen del div general row*/
+
+.card-title{
+    color: #512A5F;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}/* Stylo titulos de card´s */
+
+.card-text{
+    text-align: center;
+    color: #512A5F;
+}/* Stilo texto/parrafo de card´s*/
+
+.redes, .bi{
+    align-content: center;
+    font-size: 25px;
+    color: #512A5F;
+    line-height: 0;
+    text-align: left;
+} /* Styli redes sociales*/
+
+.bi:focus, .bi:hover {
+    color: #837295 !important;
+} /* hover bi-redes */ 
+
+.redes{
+    display: flex;
+    justify-content: center;
+} /* Posición iconos redes sociales */
+
+.btnSuscribirse{
+    display: flex;
+    justify-content: center;
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
+    /* Actualizacion para efecto boton*/
+    transition: color 0.5s, background 0.5s;
+
+}/* Stylo botón suscribirse*/
+/*-----Efecto------------------*/
+.btnSuscribirse:hover{
+    color: white;
+    background-color:  #C4ACD8 ;
+}
+.btnSuscribirse:active{
+    box-shadow: inset 0 0 20px white;
+}
+
+/*-----------------------------*/
+
+.botonSus{
+    margin-left: 40px;
+    margin-right:40px;
+}/* Margen card botón*/
+
+.textjv{
+    color: #24071a;
+    font-weight: 700;
+    text-decoration: none;
+}/* Styli textjv*/
+
+
+@media screen and (max-width: 576px) {
+
+    header{
+        background: linear-gradient(180deg, rgba(141, 106, 175, 0.81) 22.97%, rgba(73, 12, 134, 0) 100%);
+        background-color: #FFFFFF;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+    }
+    #btnBq{
+        display: none;
+    }
+    .bi-movil{
+        font-size: 26px;
+        top: 50px;
+    }
+    .card-body {
+        text-align: center;
+    }
+    .form-inline{
+        align-content: center;
+    }
+    .navSuper{
+        display: none;
+    }
+
+    .navBotones{
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+
+    body{
+        position: relative;
+        padding-bottom: 45rem ;
+        min-height: 100vh;
+    }/* Ajuste body para no alterar footer*/
+
+    .row{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 20px;
+    }/* margen del div general row*/
+    
+}
+
+

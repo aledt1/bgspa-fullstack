@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="../img/blanco_bg.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="../css/logIn.css">    Por el momento este css choca con el disenio general de la pagina-->
+  <link rel="stylesheet" href="../css/distribuidor.css">
+  <link rel="stylesheet" href="../css/headerFooter.css">
+    <!--SWEET ALERTS-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>BGSpa - Distribuidor</title>
+</head>
+
+
+
+
+<body>
+  <header>
+    <!--header de la página web-->
+    <nav class="navbar navSuper">
+      <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search"
+          style="border: none;">
+        <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html"><i class="bi bi-cart4 bi-movil binav"></i></a>
+        <a class="btn my-2 my-sm-0 acceder" type="submit" href="../pages/logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+        <div class="cerrarSesion">
+          
+        </div>
+      </form>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:center;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./nosotrosbgspa.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./distribuidor.html">Distribuidor</a>
+          </li>
+      </div>
+    </nav>
+    <div class="navBotones pruebaPosi1">
+      <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+      <a class="btn my-2 my-sm-0" type="submit" href="/pages/carrito.html"><i
+        class="bi bi-cart4 bi-movil binav"></i></a>
+      <a class="btn my-2 my-sm-0 acceder" type="submit" href="/pages/logIn.html"><i
+        class="bi bi-person bi-movil binav"></i></a>
+      <a class="cerrarSesion">
+
+      </a>
+    </div>
+  </header>
+  <br>
+  <br>
+
+  <main class="container">
+
+    <h1 class="titulo">Conviértete en distribuidor</h1>
+    <p class="subtitulo">Contáctate con BG spa para convertirte en distribuidor</p>
+    <br>
+    <br>
+    <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror"> Revisa que todos los campos se
+      hayan llenando correctamente.</div>
+    <form id="formulario">
+      <!--Primer fila-->
+      <div class="form-row">
+        <div class="form-group inputs col-md-6">
+          <label for="Nombre">Nombre (s)</label>
+          <input type="text" class="form-control holder" id="Nombre" placeholder="Tu nombre(s) aquí">
+          <div class="invalid-feedback alertaWarning" id="alertacampo1">
+            Verifique que el campo contenga más de 3 caracteres.
+          </div>
+        </div>
+        <div class="form-group inputs col-md-6">
+          <label for="Apellido">Apellido (s)</label>
+          <input type="text" class="form-control holder" id="Apellido" placeholder="Tu apellido(s) aquí">
+          <div class="invalid-feedback alertaWarning" id="alertacampo2">
+            Verifique que el campo contenga más de 3 caracteres.
+          </div>
+        </div>
+      </div>
+
+      <!--Segunda fila-->
+      <div class="form-row campos">
+        <div class="form-group inputs col-md-6">
+          <label for="validationNumber">Teléfono</label>
+          <input type="number" oninput="if(value.length>10)value=value.slice(0,10)" class="form-control holder"
+            id="validationNumber" placeholder="Número de Teléfono">
+          <div class="invalid-feedback alertaWarning" id="alertacampo3">
+            Verifique que el campo contenga 10 caracteres.
+          </div>
+        </div>
+
+        <div class="form-group inputs col-md-6">
+          <label for="Empresa">Empresa</label>
+          <input type="text" class="form-control holder" id="empresa" placeholder="Empresa">
+          <div class="invalid-feedback alertaWarning" id="alertacampo">
+            Verifique que el campo contenga más de 3 caracteres.
+          </div>
+        </div>
+      </div>
+      <!--Tercera fila-->
+      <div class="form-row campos">
+        <div class="form-group inputs col-md-6">
+          <label for="correo">Email</label>
+          <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
+          <div class="invalid-feedback alertaWarning" id="alertacampo5">
+            Verifique su correo.
+          </div>
+        </div>
+        <div class="form-group inputs col-md-6">
+          <label for="validationCorreo">Confirma tu email</label>
+          <input type="email" class="form-control holder" id="validationCorreo" placeholder="correo@ejemplo.com">
+          <div class="invalid-feedback alertaWarning" id="alertacampo6">
+            Verifique su correo.
+          </div>
+        </div>
+      </div>
+      <!--Cuarta fila-->
+      <div class="posicion campos">
+        <div class="form-group inputs col-md-6">
+          <label for="campoMensaje">Tu mensaje</label>
+          <textarea class="form-control holder" id="campoMensaje"
+            placeholder="¡Hola! Me gustaría convertirme en distribuidor." rows="7"></textarea>
+          <div class="invalid-feedback alertaWarning" id="alertacampo7">
+            Verifique que el campo contenga más de 10 caracteres.
+          </div>
+        </div>
+      </div>
+    </form>
+    <!--boton enviar-->
+    <div class="posicion">
+      <button type="button" class="col-md-4 btnEnviar" id="btnValidar">Enviar</button>
+    </div>
+  </main>
+  <br>
+  <br>
+
+
+<!--Footer | inicio-->
+<footer>
+  <div class="row">
+    <!--Card Contacto-->
+    <div class="card col-md-3 stlfot">
+      <div class="card-body">
+        <h5 class="card-title txtfot">Contacto</h5>
+        <p class="card-text txtfot"><i class="bi-telephone-fill"></i> 332 254 0774 / 331 892 7807</p>
+        <p class="card-text txtfot"><i class="bi-envelope-fill"></i> bgspa.contacto@gmail.com</p>
+        <p class="card-text txtfot"><i class="bi-geo-alt-fill"></i> Guadalajara, Jalisco, Mex.</p>
+      </div>
+    </div>
+    <!--Card Atención a clientes-->
+    <div class="card col-md-3 stlfot">
+      <div class="card-body">
+        <h5 class="card-title txtfot">Atención a clientes</h5>
+        <p class="card-text"><a href="/pages/politicas.html" class="card-text cardAtencion txtfot">Políticas de pago y envío</a></p>
+        <p class="card-text"><a href="#" class="card-text cardAtencion txtfot">Términos y condiciones</a></p>
+        <p class="card-text"><a href="/pages/privacidad.html" class="card-text cardAtencion txtfot">Aviso de privacidad</a></p>
+      </div>
+    </div>
+    <!--Card síguenos-->
+    <div class="card col-md-2 stlfot">
+      <div class="card-body">
+        <h5 class="card-title txtfot">Síguenos</h5>
+        <nav class="redes">
+          <a href="https://www.instagram.com/bgspaoficial/?igshid=YmMyMTA2M2Y%3D"
+            class="card-link bi bi-instagram"></a>
+          <a href="https://www.facebook.com/people/BG-SPA/100063504614562/" class="card-link bi bi-facebook"></a>
+          <a href="https://wa.me/3322540774" class="card-link bi bi-whatsapp"></a>
+        </nav>
+      </div>
+    </div>
+    <!--Card ofertas-->
+    <div class="card col-md-4 stlfot">
+      <div class="card-body botonSus">
+        <h5 class="card-title txtfot">¡Entérate de nuestras ofertas!</h5>
+        <label for="inputEmail" class="sr-only txtfot">Correo electrónico</label>
+        <input type="text" class="form-control txtfot" id="inputEmail" placeholder="Correo electrónico">
+        <button type="submit" id="btnSuscribirse" class="btnSuscribirse col-sm-12 txtfot">SUSCRIBIRSE</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--Div card_footer -->
+  <div class="card_footer">
+    <div class="card-body">
+      <img src="../img/logo_spa_morado.png" alt="">
+      <em>Derechos reservados &#169 BG SPA.</em> Desarrollado por <a href="./nosotros.html"> <span
+          class="textjv">JVLovers</span></a>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- <script src="../js/registro.js"></script> -->
+  <script src="../js/distribuidor.js"></script>
+  <!--<script src="../js/logIn.js"></script> Este link no funciona-->
+  <!-- <script src="../js/login.js"></script> -->
+
+  <!---------Correo---------------------->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!------------------------------------->
+  <script src="../js/cerrarsesion.js"></script>
+  <script src="../js/valfooter.js"></script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

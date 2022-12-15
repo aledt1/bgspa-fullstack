@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../img/blanco_bg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/distribuidor.css">
+    <link rel="stylesheet" href="../css/admin.css">
+     <!--SWEET ALERTS-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>BGSpa - Administrador</title>
+</head>
+
+<!-- Header -->
+<header>
+    <nav class="navbar navSuper">
+        <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BGSPA</strong></span></a>
+        <!-- <form class="form-inline">
+        <a class="btn my-2 my-sm-0" type="submit" href="./pages/logIn.html"><i
+            class="bi bi-person bi-movil binav"></i></a>
+        </form> -->
+        <!-- Login de administrador, para consultar con clienta -->
+    </nav>
+</header>
+
+<!-- Body -->
+
+<body>
+    <br>
+    <br>
+    <main class="container">
+
+        <h1 class="titulo">Administrador</h1>
+        <p>Formulario para registro de productos</p>
+        <br>
+        <br>
+        <div class="alert alert-success" role="alert" style="display: none" id="alertaexitosa"> El producto se agrego
+            exitosamente.</div>
+        <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror"> Error: Revisa que todos los
+            campos se hayan llenado correctamente.</div>
+        <br>
+        <form id="formulario">
+            <!--Primer fila-->
+            <div class="form-row">
+                <div class="form-group inputs col-md-6">
+                    <label for="campoProducto">Producto</label>
+                    <input type="text" class="form-control holder" id="campoProducto" placeholder="Nombre del producto">
+                    <div class="invalid-feedback alertaWarning" id="alertacampo1">
+                        Verifique que el campo contenga más de 5 caracteres.
+                    </div>
+                </div>
+                <div class="form-group inputs col-md-6">
+                    <label for="campoPrecio">Precio</label>
+                    <input type="text" class="form-control holder" id="campoPrecio" placeholder="00.00">
+                    <div class="invalid-feedback alertaWarning">
+                        Verifique que el valor ingresado no contenga el símbolo ("$"), espacios (" ") y cuente con 2
+                        decimales (ejemplo: 10.00).
+                    </div>
+                </div>
+            </div>
+
+            <!--Segunda fila-->
+            <div class="form-row campos">
+
+                <div class="form-group inputs col-md-6">
+                    <label for="inlineFormCustomSelect">Categoría</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected disabled value="">Selecciona...</option>
+                        <option value="Aceites para masaje">Aceites para masaje</option>
+                        <option value="Básicos">Básicos</option>
+                        <option value="Bio Jelly Spa">Bio Jelly Spa</option>
+                        <option value="Bombas Efervescentes">Bombas Efervescentes</option>
+                        <option value="Complementos">Complementos</option>
+                        <option value="Exfoliantes">Exfoliantes</option>
+                        <option value="Herramientas">Herramientas</option>
+                        <option value="Hidratación">Hidratación</option>
+                        <option value="Kit">Kit</option>
+                        <option value="Lociones">Lociones</option>
+                        <option value="Mascarillas">Mascarillas</option>
+                        <option value="Sales Efervescentes">Sales Efervescentes</option>
+                        <option value="Sales Minerales">Sales Minerales</option>
+                        <option value="Sanitizantes y Limpiadores">Sanitizantes y Limpiadores</option>
+                        
+                    </select>
+                    <div class="invalid-feedback alertaWarning">
+                        Seleccione una categoría.
+                    </div>
+                </div>
+
+                <div class="form-group inputs col-md-6">
+                    <label for="campoSKU">SKU</label>
+                    <input type="text" class="form-control holder" id="campoSKU" placeholder="XXXXX">
+                    <div class="invalid-feedback alertaWarning">
+                        Verifique que el valor ingresado contenga solo letras mayúsculas y números).
+                    </div>
+                </div>
+            </div>
+
+            <!--Tercer fila-->
+            <div class="form-row posicion campos">
+                <div class="form-group inputs col-md-6">
+                    <label for="campoDescripcion">Descripción</label>
+                    <textarea class="form-control holder" id="campoDescripcion" rows="7"
+                        placeholder="Descripcion del producto"></textarea>
+                    <div class="invalid-feedback alertaWarning">
+                        Verifique que el valor del campo contenga más de 10 carácteres.
+                    </div>
+                </div>
+                <div class="form-group inputs col-md-6">
+                    <label for="campoArchivo">Adjuntar Archivo</label>
+                    <input type="button" class="form-control btn-primary btnEnviar" value="Subir imagen" id="btnFake"> 
+                    <input type="file" class="form-control-file" id="campoArchivo" style="display:none" accept=".jpg,.png" >
+
+                    <!--<input type="file" id="campoArchivo" accept=".jpg,.png">-->
+                    <div class="invalid-feedback alertaWarning">
+                        Selecciona una imagen.
+                    </div>
+                    <div class="valid-feedback alertaWarning">
+                        Imagen cargada exitosamente.
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <!--boton enviar-->
+        <div class="posicion">
+            <button type="button" class="col-md-4 btnEnviar" id="btnAgregar">Agregar</button>
+        </div>
+        <br>
+        <h3>Lista de nuevos productos</h3>
+        <hr>
+        <br>
+        <p>Primero llene el formulario y agregre el nuevo producto para poder visualizarlo</p>
+        <div id="conta" class="container"></div>
+    </main>
+
+
+
+    <!--footer de la pagina web-->
+    <footer>
+        <!--ROW INFERIOR-->
+        <div class="card_footer ">
+            <div class="card-body cardBody">
+                <img src="../img/logo_spa_morado.png" alt="">
+                <em>Derechos reservados &#169 BG SPA.</em> Desarrollado por <a href="./pages/nosotros.html"> <span
+                        class="textjv">JVLovers</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------------------------------------------------->
+    <script src="../js/admin.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

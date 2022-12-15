@@ -1,0 +1,75 @@
+body{
+    font-family: Raleway;
+}
+hr{
+    border: 1px solid rgb(204, 204, 204);  
+}
+h2{
+    font-weight: 700;
+    color: #393f42
+}
+.btnCarrusel{
+    position: relative;
+    color: grey;
+    border-width: 10px;
+    border-color: black;
+}
+.btnCarrusel:hover{
+    color: black;
+}
+.flexCarrusel{
+    display: flex;
+    justify-content: center;
+}
+
+.iconFlecha{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: 50%/100% 100% no-repeat;
+    border-width: 10px;
+
+}
+
+.btnAnadir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnEnviar{
+    display: flex;
+    justify-content: center;
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px 12px 20px;
+}
+
+.fondocard{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #393f42;
+    text-align: center;
+}
+.fontbold{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.marginCon{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.ancla{
+    color: #393f42;
+    font-size: 20px;
+    font-weight: 700;
+}
+.ancla:hover{
+    color: #393f42;
+    text-decoration: none;
+}

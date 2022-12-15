@@ -1,0 +1,298 @@
+#a {
+    display: none;
+    text-align: right;
+    color: #F9F9F9;
+    font-size: 20px;
+     
+}
+
+.b{
+    background: #8D6AAF;
+
+}
+
+.btn1{
+    background-color: #A97798 !important;
+    border: none !important;
+}
+
+
+body {
+    font-family: 'Raleway';
+}
+
+.titulo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 73px;
+    line-height: 86px;
+    text-align: center;
+    color: #512A5F; 
+}
+
+.subtitulo {
+    font-family: 'Raleway';
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 20px; 
+    line-height: 23px; 
+    align-content: center; 
+    text-align: center; 
+    color: #393F42; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.inputs{
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 22px; 
+    line-height: 15px;
+    color: #393F42; 
+}
+
+.holder{
+    background: #F9F9F9; 
+    border-radius: 10px; 
+    border: none;
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 15px; /* or 68% */ 
+    color: #C7C7C7
+}
+
+.imgLogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.imgRedes{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.btnSesion, .btnRegistrar{
+    align-content: center;
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.5s, background 0.5s!important;
+}
+/*-----Efecto------------------*/
+#btnIniciarSesion{
+     /* Actualizacion para efecto boton*/
+     transition: color 0.5s, background 0.5s;
+}
+#btnIniciarSesion:hover{
+    color: white;
+    background-color:  #C4ACD8 ;
+}
+
+#btnIniciarSesion:active{
+    box-shadow: inset 0 0 20px white;
+}
+
+/*-----------------------------*/
+/*-----Efecto------------------*/
+.btnRegistrar{
+    text-align: center!important;
+    padding-top: 0.5px!important;
+    padding-bottom: 0.5px!important;
+    /* Actualizacion para efecto boton*/
+    transition: color 0.5s, background 0.5s!important;
+}
+
+.btnRegistrar:hover{
+   color: white!important;
+   background-color:  #C4ACD8!important;
+}
+
+.btnRegistrar:active{
+   box-shadow: inset 0 0 20px white!important;
+}
+
+/*-----------------------------*/
+
+.alert{
+    background-color: #ecd2f5;
+    opacity: 0.6;
+    border-color: #ffffff;
+    color:  #321b3a;
+}
+
+
+.alertaWarning{
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 10; 
+    font-size: 15px; 
+    line-height: 15px;
+    color: #A97798;
+}
+
+.form-control:focus {
+    border-color: #c112ea; 
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(193, 18, 234, 0.6); 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(193, 18, 234, 0.6);
+}
+.btnRegistrar{
+    margin-bottom: 3rem;
+}
+/* .btnRegistrar:hover{
+    color: white!important;
+} */
+
+.posicion{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+.txt{
+    padding-top: 2rem;
+    text-align:center;
+    font-weight: bold;
+}
+body {
+    font-family: 'Raleway';
+}
+
+.titulo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 73px;
+    line-height: 86px;
+    text-align: center;
+    color: #512A5F; 
+}
+
+.subtitulo {
+    font-family: 'Raleway';
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 20px; 
+    line-height: 23px; 
+    align-content: center; 
+    text-align: center; 
+    color: #393F42; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.inputs{
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 22px; 
+    line-height: 15px;
+    color: #393F42; 
+}
+
+.holder{
+    background: #F9F9F9; 
+    border-radius: 10px; 
+    border: none;
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 15px; /* or 68% */ 
+    color: #C7C7C7
+}
+
+.imgLogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.imgRedes{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.btnSesion, .btnRegistrar{
+    align-content: center;
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.btnRegistrar{
+    margin-bottom: 3rem;
+}
+
+.posicion{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.olvcontraseña{
+    text-align:right;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.txt{
+    padding-top: 2rem;
+    text-align:center;
+    font-weight: bold;
+}
+
+.compos{
+    padding-top: 1rem;
+    }
+
+@media screen and (max-width: 576px) {
+    .titulo{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #a {
+        display: none;
+    }
+    
+
+}
+.compos{
+    padding-top: 1rem;
+    }
+
+@media screen and (max-width: 576px) {
+    .titulo{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #a {
+        display: none;
+    }
+    
+
+}
