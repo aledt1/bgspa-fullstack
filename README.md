@@ -2,7 +2,7 @@
 
 Consintiendo tu alma
 
-![Portada]()
+![Portada](/img/banner.jpg?raw=true "Portada")
 
 Es una empresa 100% mexicana enfocada en la comercialización, distribución y elaboración de productos para pedicure y manicure spa y de cuidado personal.
 
